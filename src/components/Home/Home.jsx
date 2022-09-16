@@ -10,7 +10,7 @@ const Home = () => {
   const getInputValue = useRef();
 
   // suggest data in inputfield
-  const showCountry = (event) => {
+  const showCountry = () => {
     const searchInputValue = getInputValue.current.value;
     const searchString = new RegExp(`^${searchInputValue}`, "i");
     const result = countryNameList.filter((i) => i.match(searchString, `\n`));
